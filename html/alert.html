@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>alert</title>
+		<meta name="description" content="" />
+		<meta name="author" content="tianyun" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" href="../css/alert.css"/>
+		<link rel="stylesheet" href="../css/theme.css"/>
+		<link rel="stylesheet" href="../css/page.css"/>
+		<link href="alert/themes/default/theme.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="page">
+
+			<!-- PREFACE -->
+			<h1> Welcome to <b>Smart Alert</b></h1>
+			<p>
+				Smart Alert aims to replace standard dumb alert with fully configurable alternative, while maintaining its ease of use.
+			</p>
+			<div class="box">
+				<h2> default</h2>
+				<!-- DEFAULT -->
+				<h4>
+                <b>jquery or dojo </b>
+               </h4>
+<pre style="display:block"><code class="xml"><span class="comment">&lt;!-- JQUERY --DOJO---&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dojo.xd.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="comment">&lt;!-- ALERT --&gt;</span>
+
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"../css/alert.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span>
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"../css/theme.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../js/alert.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre>
+			</div>
+			<div class="box">
+				<h2> setup</h2>
+				<!-- DEFAULT -->
+				<h4>
+                <b>Get options</b>
+               </h4>
+<pre style="display:block"><code class="javascript">dojo.alert.setup();</code></pre>
+				<h4>
+                <b>Set options</b>
+               </h4>
+<pre style="display:block"><code class="javascript">dojo.alert.setup({settings});</code></pre>
+			</div>
+			<!-- THEMES -->
+			<div class="box">
+				<h2> Themes </h2>
+				<!-- DEFAULT -->
+				<h3> Default </h3>
+				<img src="img/warning.png" alt="">
+				<hr>
+				<!-- DARK -->
+				<h3> Dark </h3>
+				<img src="img/dark.png" alt="">
+				<hr>
+				<!-- LIGHT -->
+				<h3> Light </h3>
+				<img src="img/light.png" alt="">
+			</div>
+			<!-- PREDEFINED TYPES -->
+			<div class="box">
+				<h2> Predefined types </h2>
+				<!-- INFO -->
+				<img src="img/info.png" alt="">
+				<br>
+				<a href="#demo-info" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+				<hr>
+				<!-- CONFIRM -->
+				<img src="img/confirm.png" alt="">
+				<br>
+				<a href="#demo-confirm" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'confirm'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+				<hr>
+				<!-- WARNING -->
+				<img src="img/warning.png" alt="">
+				<br>
+				<a href="#demo-warning" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'warning'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+				<hr>
+				<!-- ERROR -->
+				<img src="img/error.png" alt="">
+				<br>
+				<a href="#demo-error" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'error'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+				<hr>
+				<!-- PROMPT -->
+				<img src="img/prompt.png" alt="">
+				<br>
+				<a href="#demo-prompt" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<span class="string">'prompt'</span>, <span class="string">'Lorem ipsum dolor sit amet'</span>);</code></pre>
+			</div>
+			<!-- TITLE -->
+			<div class="box">
+				<h2> Title </h2>
+				<img src="img/title.png" alt="">
+				<br>
+				<a href="#demo-title" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'My title'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+			</div>
+			<!-- ICON -->
+			<div class="box">
+				<h2> Icon </h2>
+				<!-- NO ICON -->
+				<h3> No icon </h3>
+				<img src="img/no_icon.png" alt="">
+				<br>
+				<a href="#demo-no_icon" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open({
+    content: <a class="string">'Lorem ipsum dolor sit amet'</a>,
+    icon: <a class="literal">false</a>
+});</code></pre>
+				<hr>
+				<!-- CUSTOM ICON -->
+				<h3> Custom icon </h3>
+				<img src="img/custom_icon.png" alt="">
+				<br>
+				<a href="#demo-custom_icon" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code><a class="id">#smartAlert</a><a class="attr_selector">[data-icon="hand"]</a> <a class="id">#smartAlertIcon</a> <a class="rules">{
+    </a><a class="rule"></a><a class="attribute">background-image</a>:<a class="value"> </a><a class="function">url(img/hand.png)</a>;
+<a class="rule">}</a></code>
+
+<code class="javascript">dojo.alert.open({
+    content: <a class="string">'Lorem ipsum dolor sit amet'</a>,
+    icon: <a class="string">'hand'</a>
+});</code>
+</pre>
+			</div>
+			<!-- CONTENT -->
+			<div class="box">
+				<h2> Content </h2>
+				<!-- TEXT -->
+				<h3> Text </h3>
+				<img src="img/info.png" alt="">
+				<br>
+				<a href="#demo-text" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+				<hr>
+				<!-- HTML -->
+				<h3> HTML </h3>
+				<img src="img/html.png" alt="">
+				<br>
+				<a href="#demo-html" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'&lt;b&gt;Lorem&lt;/b&gt; &lt;i&gt;ipsum&lt;/i&gt; &lt;u&gt;dolor&lt;/u&gt;&lt;br /&gt;&lt;a href="#"&gt;sit amet&lt;/a&gt; consectetur.'</a>);</code></pre>
+			</div>
+			<!-- WIDTH -->
+			<div class="box">
+				<h2> Width </h2>
+				<img src="img/width.png" alt="">
+				<br>
+				<a href="#demo-width" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open({
+    content: <a class="string">'Lorem ipsum dolor sit amet'</a>,
+    width: <a class="number">400</a>
+});
+</code></pre>
+			</div>
+			<!-- CONTENT ALIGNMENT -->
+			<div class="box">
+				<h2> Content alignment </h2>
+				<img src="img/align.png" alt="">
+				<br>
+				<a href="#demo-alignment" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open({
+    content: <a class="string">'Lorem ipsum dolor sit amet'</a>,
+    width: <a class="number">400</a>,
+    align: <a class="string">'right'</a>
+});</code></pre>
+			</div>
+			<!-- BUTTONS -->
+			<div class="box">
+				<h2> Buttons </h2>
+				<!-- CUSTOM BUTTONS -->
+				<h3> Custom buttons </h3>
+				<img src="img/custom_buttons.png" alt="">
+				<br>
+				<a href="#demo-buttons" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>, {
+    someId: <a class="string">'Abc'</a>,
+    otherId: <a class="string">'Def'</a>
+});</code></pre>
+				<hr>
+				<!-- CALLBACK -->
+				<h3> Callback </h3>
+				<img src="img/callback.png" alt="">
+				<br>
+				<a href="#demo-callback" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>, {A: <a class="string">'A'</a>, B: <a class="string">'B'</a>, C: <a class="string">'C'</a>}, <a class="function"></a><a class="keyword">function</a><a class="params">(button)</a> {
+    <a class="keyword">if</a> (!button)
+        dojo.alert.open(<a class="string">'Alert was canceled.'</a>);
+    <a class="keyword">else</a>
+        dojo.alert.open(<a class="string">'You pressed the "'</a> + button + <a class="string">'" button.'</a>);
+});</code></pre>
+			</div>
+			<!-- SCROLLBAR -->
+			<div class="box">
+				<h2> Scrollbar </h2>
+				<img src="img/scrollbar.png" alt="">
+				<br>
+				<a href="#demo-scrollbar" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.open({
+    maxHeight: <span class="number">160</span>,
+    content: <span class="string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas ligula ut nunc porttitor dictum. Pellentesque sit amet massa sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus lectus, facilisis luctus consectetur dictum, posuere a urna. Curabitur bibendum nisi sem. Nam at lectus at ipsum suscipit consectetur vel at ante. Mauris risus metus, commodo vel volutpat vitae, eleifend nec diam. Nullam tempor tortor ut mi porttitor adipiscing. Curabitur vitae diam sem, sed mattis odio. Pellentesque pretium interdum odio ac tristique. Nunc accumsan mauris et lorem adipiscing vel pulvinar lacus auctor. Fusce euismod, turpis quis elementum interdum, lacus risus porta dui, ac viverra diam augue eu mi. Praesent id lacus sem, eget dictum dui. In scelerisque euismod tellus a tincidunt. Sed sodales ullamcorper viverra. Praesent semper ipsum ac tellus euismod semper bibendum libero lobortis. Vivamus placerat auctor congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere mi vitae arcu aliquet pretium suscipit libero sollicitudin. Vivamus et ligula nisl. Fusce adipiscing porttitor lacus, et luctus dui ornare quis. Pellentesque luctus velit varius turpis egestas posuere. Phasellus et velit metus, at bibendum ante. Vivamus vel enim id est dapibus vestibulum. Nullam tincidunt risus non erat scelerisque cursus ac sed.'</span>
+});</code></pre>
+			</div>
+			<!-- LOCALIZATION -->
+			<div class="box">
+				<h2> Localization </h2>
+				<img src="img/localization.png" alt="">
+				<br>
+				<a href="#demo-localization" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code class="javascript">dojo.alert.setup({
+    types: {
+        confirm: {
+            title: <a class="string">'Konfirmieren'</a>,
+            buttons: {
+                yes: <a class="string">'Ja'</a>,
+                no: <a class="string">'Nein'</a>
+            }
+        }
+    }
+});</code>
+
+<code class="javascript">dojo.alert.open(<a class="string">'confirm'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+			</div>
+			<!-- CUSTOM TYPE -->
+			<div class="box">
+				<h2> Custom type </h2>
+				<img src="img/custom_type.png" alt="">
+				<br>
+				<a href="#demo-custom_type" class="button blue"> Try it </a>
+				<a class="button orange code"> Code </a>
+				<pre><code><a class="id">#smartAlert</a><a class="attr_selector">[data-icon="tip"]</a> <a class="id">#smartAlertIcon</a> <a class="rules">{
+    </a><a class="rule"></a><a class="attribute">background-image</a>:<a class="value"> </a><a class="function">url(img/tip.png)</a>;
+<a class="rule">}</a>
+</code>
+
+<code class="javascript">dojo.alert.setup({
+    types: {
+        tip: {
+            title: <a class="string">'Tip'</a>,
+            icon: <a class="string">'tip'</a>,
+            buttons: {
+                cancel: <a class="string">'Close'</a>
+            }
+        }
+    }
+});</code>
+
+<code class="javascript">dojo.alert.open(<a class="string">'tip'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+			</div>
+
+		</div>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dojo.xd.js" ></script>
+
+        <script src="../js/page.js"></script>
+        <script src="../js/alert_dojo.js"></script>
+	</body>
+</html>

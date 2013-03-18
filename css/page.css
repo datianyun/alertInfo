@@ -1,0 +1,250 @@
+
+/* =====[ GLOBAL STYLES ]======================================================================== */
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #63737f;
+    background: url(../img/background.jpg);
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    padding: 0 16px;
+    line-height: 20px;
+}
+
+/* =====[ BUTTONS ]============================================================================== */
+
+#page .button {
+    display: inline-block;
+    padding: 9px 18px;
+    min-width: 52px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#page .button + .button {
+    margin-left: 8px;
+}
+
+#page .button.big {
+    padding: 14px 22px;
+}
+
+#page .button.orange {
+    background: #f9661e;
+}
+
+#page .button.orange:hover {
+    background: #e20;
+}
+
+#page .button.blue {
+    background: #2d97fa;
+}
+
+#page .button.blue:hover {
+    background: #007aeb;
+}
+
+/* =====[ CONTENT ]============================================================================== */
+
+#page {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+#page .button.doc {
+    margin: 50px 0;
+}
+
+#page .box + .button.doc {
+    margin-top: 45px;
+}
+
+
+#page h1 {
+    margin-top: -5px;
+    font-size: 25px;
+    color: #252629;
+}
+
+#page h1 + p {
+    margin: 9px 0 50px;
+}
+
+#smartAlert[data-icon="hand"] #smartAlertIcon {
+    background-image: url(../img/hand.png);
+}
+
+#smartAlert[data-icon="tip"] #smartAlertIcon {
+    background-image: url(../img/tip.png);
+}
+
+#smartAlertContent a {
+    text-decoration: underline;
+}
+
+/* =====[ BOX ]================================================================================== */
+
+#page .box {
+    overflow: hidden;
+    margin-top: 21px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -ms-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -o-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+}
+
+#page .box:first-child {
+    margin-top: 0;
+}
+
+#page .box h2 {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 23px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    color: #3f526b;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);    
+    -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);    
+    -ms-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);    
+    -o-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);    
+}
+
+#page .box h3 {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#page .box .button {
+    margin-top: 6px;
+    margin-bottom: 38px;
+}
+
+#page .box hr {
+    margin: 0 0 4px;
+    border-top: 1px solid #d6d6d6;
+    height: 0;
+}
+
+#page .box pre {
+    display: none;
+    padding: 0 38px 38px;
+}
+
+/* Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name> */
+
+pre code {
+    display: block;
+    border: 1px solid #d6d6d6;
+    padding: 10px 13px;
+    line-height: 20px;
+    background: #f7f7f8;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+pre .comment,
+pre .annotation,
+pre .template_comment,
+pre .diff .header,
+pre .chunk,
+pre .apache .cbracket {
+    color: rgb(0, 128, 0);
+}
+
+pre .keyword,
+pre .id,
+pre .title,
+pre .built_in,
+pre .aggregate,
+pre .smalltalk .class,
+pre .winutils,
+pre .bash .variable,
+pre .tex .command {
+    color: rgb(0, 0, 255);
+}
+
+pre .string,
+pre .title,
+pre .parent,
+pre .tag .value,
+pre .rules .value,
+pre .rules .value .number,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .ruby .symbol .keyword,
+pre .ruby .symbol .keymethods,
+pre .instancevar,
+pre .aggregate,
+pre .template_tag,
+pre .django .variable,
+pre .addition,
+pre .flow,
+pre .stream,
+pre .apache .tag,
+pre .date,
+pre .tex .formula {
+    color: rgb(163, 21, 21);
+}
+
+pre .ruby .string,
+pre .decorator,
+pre .filter .argument,
+pre .localvars,
+pre .array,
+pre .attr_selector,
+pre .pseudo,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .envvar,
+pre .shebang,
+pre .preprocessor,
+pre .userType,
+pre .apache .sqbracket,
+pre .nginx .built_in,
+pre .tex .special,
+pre .input_number {
+    color: rgb(43, 145, 175);
+}
+
+pre .phpdoc,
+pre .javadoc,
+pre .xmlDocTag {
+    color: rgb(128, 128, 128);
+}
+
+pre .vhdl .type {
+    font-weight: bold;
+}
+
+pre .vhdl .string {
+    color: #666666;
+}
+
+pre .vhdl .literal {
+    color: rgb(163, 21, 21);
+}
