@@ -163,7 +163,7 @@
 		$.place(node, d.container);
 		m = $.query("#smartAlert")[0];
 		b = $.query("#smartAlertBox")[0];
-		b.style.width = d.width;
+		b.style.width = d.width+"px";
 	}
 
 	function a() {
